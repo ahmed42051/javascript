@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>chapter9-11 assigments</title>
+
+    <style>
+        table, th, td {
+          border: 1px solid;
+          border-collapse: collapse;
+          padding: 10px;
+          text-align: center;
+          width: 36rem;
+          height: 1.3rem;
+          border-color: #1a67e4, #1a67e4, #1a67e4, #1a67e4 ;
+        }
+
+        table, th, td{
+            color: #1a67e4;
+        }
+        #color{
+            font-weight: bold;
+        }
+      .table {
+        border-collapse: collapse;
+        width: 60%;
+        margin: 0 auto;
+        text-align: center;
+      }
+
+      .table, th, td {
+        border: 1px solid black;
+        padding: 8px;
+      }
+
+      .table, th {
+        background-color: lightgrey;
+      }
+
+      .container {
+        text-align: center;
+        margin-top: 50px;
+      }
+      .h1 {
+        text-align: center;
+      }
+
+      input[type="text"] {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        box-sizing: border-box;
+        border: 2px solid gray;
+        border-radius: 4px;
+      }
+
+      #button[type="button"] {
+        width: 100%;
+        background-color: lightgray;
+        color: white;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+
+      #container {
+        border-radius: 5px;
+        background-color: #f2f2f2;
+        padding: 20px;
+      }
+      </style>
+</head>
+<body>
+
+    <h1 style="text-align: center;">Student Result</h1>
+    <table class="table">
+      <tr>
+        <th>Subject</th>
+        <th>Total Marks</th>
+        <th>Marks Obtained</th>
+      </tr>
+      <tr>
+        <td>Subject 1</td>
+        <td><input type="number" id="subject1TotalMarks"></td>
+        <td><input type="number" id="subject1ObtainedMarks"></td>
+      </tr>
+      <tr>
+        <td>Subject 2</td>
+        <td><input type="number" id="subject2TotalMarks"></td>
+        <td><input type="number" id="subject2ObtainedMarks"></td>
+      </tr>
+      <tr>
+        <td>Subject 3</td>
+        <td><input type="number" id="subject3TotalMarks"></td>
+        <td><input type="number" id="subject3ObtainedMarks"></td>
+      </tr>
+      <tr>
+        <td colspan="2">Total Marks:</td>
+        <td><input type="text" id="totalMarks" readonly></td>
+      </tr>
+      <tr>
+        <td colspan="2">Marks Obtained:</td>
+        <td><input type="text" id="obtainedMarks" readonly></td>
+      </tr>
+      <tr>
+        <td colspan="2">Percentage:</td>
+        <td><input type="text" id="percentage" readonly></td>
+      </tr>
+      <tr>
+        <td colspan="2">Grade:</td>
+        <td><input type="text" id="grade" readonly></td>
+      </tr>
+      <tr>
+        <td colspan="2">Remarks:</td>
+        <td><input type="text" id="remarks" readonly></td>
+      </tr>
+    </table>
+    <br><br>
+    <button style="display: block; margin: 0 auto;" onclick="calculateResult()">Calculate Result</button>
+   
+    <p id="result"></p>
+
+
+    <div class="container">
+        <h1>Guess the Secret Number</h1>
+        <p>The secret number is between 1 and 10</p>
+        <input type="number" id="guess">
+        <button onclick="checkGuess()">Guess</button>
+        <p id="result"></p>
+    </div>
+
+    <button onclick="checkEvenOdd()">Check Even or Odd</button>
+     
+
+    <h1 class="h1">Temperature Message</h1>
+    <p>Enter the temperature: <input type="number" id="temperature"></p>
+    <button style="display: block; margin: 0 auto;" onclick="showMessage()" id="button">Show Message </button>
+    <p id="message" style="text-align: center;"></p>
+
+    <div id="container">
+        <h2>Calculator</h2>
+        <input type="text" id="firstNumber" placeholder="Enter First Number">
+        <input type="text" id="secondNumber" placeholder="Enter Second Number">
+        <select id="operation">
+          <option value="+">+</option>
+          <option value="-">-</option>
+          <option value="*">*</option>
+          <option value="/">/</option>
+          <option value="%">%</option>
+        </select>
+        <br><br>
+      <button type="button" onclick="calculate()">Calculate</button>
+      <br><br>
+      <input type="text" id="resul" readonly>
+    </div>
+
+    <script src="chapt9-11.js"></script>
+    
+</body>
+</html>
