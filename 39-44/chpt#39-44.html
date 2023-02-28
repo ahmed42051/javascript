@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>chapter#3934</title>
+
+    <style>
+        .listitem {
+          color: red;
+        }
+
+        .red {
+			color: rgba(255, 0, 0, 0.788);
+			font-weight: bold;
+		}
+      </style>
+</head>
+ <body style="font-family: Arial, sans-serif;">
+    <h1>About Me</h1>
+    <ul>
+      <li>Neck name: <span id="nickename">Ahmy</span></li>
+      <li>favorite:  <span id="favorite">Hazart ALI (A.S)</span></li>
+      <li>HOMETOWN: <span id="HOMETOWN"> IN KPK</span></li>
+      <img src="">
+    </ul>
+   
+    <script>
+        const lis = document.querySelectorAll('li');
+        for (let i = 0; i < lis.length; i++) {
+          lis[i].className = 'listitem';
+        }
+  
+        const img = document.createElement('img');
+        img.src = 'ali.jpg';
+        document.body.appendChild(img);
+      </script>
+      <p id="my-paragraph">This is a <strong>sample</strong> paragraph with <strong>bold</strong> words.</p>
+
+
+      <select id="myList">
+        <option>Option 1</option>
+        <option>Option 2</option>
+        <option>Option 3</option>
+        <option>Option 4</option>
+      </select>
+      <button onclick="countItems()">Count Items</button>
+
+      <a href="https://example.com" hreflang="en" rel="nofollow" target="_blank" type="text/html">Example link</a>
+      <button onclick="getLinkAttributes()">Get link attributes</button>
+
+
+      <p id="paragraph">This is a paragraph.</p>
+
+	<button onclick="setBackgroundColor()">Set background color to red</button>
+
+
+    <h1>Currency Converter</h1>
+	<label>US Dollars:</label>
+	<input type="number" id="usd-input" oninput="usdToPkr()" />
+	<br /><br />
+	<label>Pakistani Rupees:</label>
+	<input type="number" id="pkr-input" oninput="pkrToUsd()" />
+
+
+
+
+    <nav>
+		<a href="#" onclick="showHome()">Home</a>
+		<a href="#" onclick="showAbout()">About</a>
+		<a href="#" onclick="showServices()">Services</a>
+		<a href="#" onclick="showContact()">Contact</a>
+	</nav>
+	<div class="container">
+		<div id="home" class="content">
+			<h1>Welcome to our website!</h1>
+			<p>We offer a wide range of products and services to meet your needs. Browse our website to learn more.</p>
+		</div>
+		<div id="about" class="content" style="display: none;">
+			<h1>About Us</h1>
+			<p>We are a leading provider of quality products and services. Our team is dedicated to ensuring your satisfaction.</p>
+		</div>
+		<div id="services" class="content" style="display: none;">
+			<h1>Our Services</h1>
+			<p>We offer a variety of services, including consulting, design, and support. Contact us to learn more.</p>
+		</div>
+		<div id="contact" class="content" style="display: none;">
+			<h1>Contact Us</h1>
+			<p>Feel free to contact us with any questions or concerns. We're here to help.</p>
+		</div>
+	</div>
+
+
+
+
+
+    <script src="chapt39-44.js"> </script>
+
+   
+</body>
+</html>
